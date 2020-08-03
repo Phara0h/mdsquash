@@ -45,9 +45,7 @@ async function start() {
   for (var i = 0; i < program.input.length; i++) {
     mdFiles[`doc${i+1}`] = await fs.readFile(program.input[i], {encoding: 'ascii'});
   }
-  console.log(mdFiles)
   var merged = template(mdFiles);
-  console.log(merged)
   await fs.writeFile(program.out,merged, {encoding: 'ascii'});
 
   console.log('Done');
