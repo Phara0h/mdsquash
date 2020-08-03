@@ -1,0 +1,32 @@
+{
+  "name": "mdsquash",
+  "version": "1.0.0",
+  "description": "Merges multiple MD files into one readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phara0h/mdsquash.git"
+  },
+  "keywords": [
+    "md",
+    "merge",
+    "readme",
+    "template"
+  ],
+  "author": "Jt Whissel",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Phara0h/mdsquash/issues"
+  },
+  "bin": {
+    "mdsquash": "./index.js"
+  },
+  "homepage": "https://github.com/Phara0h/mdsquash#readme",
+  "dependencies": {
+    "commander": "^6.0.0",
+    "nbars": "^1.0.1"
+  }
+}
