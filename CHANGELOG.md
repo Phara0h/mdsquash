@@ -1,5 +1,11 @@
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.0.3](https://github.com/Phara0h/mdsquash/compare/v1.0.3-0...v1.0.3)
+
+> 3 August 2020
+
+- Removed LICENSE from README.md [`ad2be34`](https://github.com/Phara0h/mdsquash/commit/ad2be34a39ce3eaabfc470378d63ccc4ac833b6b)
+
 #### [v1.0.3-0](https://github.com/Phara0h/mdsquash/compare/v1.0.2...v1.0.3-0)
 
 > 3 August 2020
