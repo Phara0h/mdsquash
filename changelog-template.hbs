@@ -2,9 +2,13 @@ All notable changes to this project will be documented in this file. Dates are d
 
 {{#each releases}}
   {{#if href}}
-    ###{{#unless major}}#{{/unless}} [{{title}}]({{href}}) [{{niceDate}}]
+    ###{{#unless major}}#{{/unless}} [{{title}}]({{href}})
   {{else}}
     #### {{title}}
+  {{/if}}
+
+  {{#if tag}}
+    > {{niceDate}}
   {{/if}}
 
   {{#if summary}}
