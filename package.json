@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "git push && git push --tags && auto-changelog -l false --template changelog-template.hbs -p && ./index.js -i ExampleUse.md,CHANGELOG.md,LICENSE && git add -A CHANGELOG.md && git add -A README.md && git push && npm publish"
+    "version": "auto-changelog -l false --sort-commits date --package --hide-credit --template changelog-template.hbs -p && ./index.js -i ExampleUse.md,CHANGELOG.md,LICENSE && git add -A CHANGELOG.md && git add -A README.md"
+    "postversion": "git push &&  git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
