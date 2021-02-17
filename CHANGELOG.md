@@ -1,5 +1,11 @@
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.0.6](https://github.com/Phara0h/mdsquash/compare/v1.0.5...v1.0.6)
+
+> 17 February 2021
+
+- Fixed template option no working. [`1a51f00`](https://github.com/Phara0h/mdsquash/commit/1a51f0076cdad4d4af6c4aba24eaf186d1c22963)
+
 #### [v1.0.5](https://github.com/Phara0h/mdsquash/compare/v1.0.4...v1.0.5)
 
 > 3 August 2020

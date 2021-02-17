@@ -1,6 +1,6 @@
 {
   "name": "mdsquash",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Merges multiple MD files into one readme",
   "main": "index.js",
   "scripts": {
