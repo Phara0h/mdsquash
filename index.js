@@ -8,7 +8,7 @@ function commaSeparatedList(value, dummyPrevious) {
 
 async function start() {
   const {NBars} = await import("nbars");
-  program.option('-t, --template', 'Readme.nbs file (defaults to current dir, then to no template)')
+  program.option('-t, --template <path>', 'Readme.nbs file (defaults to current dir, then to no template)')
   .option('-o, --out <type>', 'Where to output Readme.md file (defaults to current dir/README.md)', 'README.md')
   .requiredOption('-i, --input <items>', 'comma separated list of md file paths to be merged in order', commaSeparatedList);
 
@@ -32,10 +32,10 @@ async function start() {
     }
   } else {
     try {
-      program.template = await fs.readFile('Readme.nbs', {encoding: 'ascii'});
+      program.template = await fs.readFile(program.template, {encoding: 'ascii'});
       template = NBars.compile(program.template);
     } catch (e) {
-      console.log('Error reading file '+program.template);
+      console.log('Error reading file '+program.template,e);
       process.exit();
     }
   }
