@@ -1,5 +1,9 @@
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v1.1.0](https://github.com/Phara0h/mdsquash/compare/v1.0.6...v1.1.0)
+
+- use utf-8 to support more chars [`625bfa4`](https://github.com/Phara0h/mdsquash/commit/625bfa4f7c0d51a7985b7086c800f3d8e8dd8ed6)
+
 #### [v1.0.6](https://github.com/Phara0h/mdsquash/compare/v1.0.5...v1.0.6)
 
 > 17 February 2021
