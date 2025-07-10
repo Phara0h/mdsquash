@@ -20,7 +20,7 @@ async function start() {
   var template = null;
   if(!program.template) {
     try {
-      program.template = await fs.readFile('Readme.nbs', {encoding: 'ascii'});
+      program.template = await fs.readFile('Readme.nbs', {encoding: 'utf-8'});
       template = NBars.compile(program.template);
     } catch (e) {
       console.log('No template found in current dir. Using default');
@@ -32,7 +32,7 @@ async function start() {
     }
   } else {
     try {
-      program.template = await fs.readFile(program.template, {encoding: 'ascii'});
+      program.template = await fs.readFile(program.template, {encoding: 'utf-8'});
       template = NBars.compile(program.template);
     } catch (e) {
       console.log('Error reading file '+program.template,e);
@@ -43,10 +43,10 @@ async function start() {
 
   var mdFiles = {};
   for (var i = 0; i < program.input.length; i++) {
-    mdFiles[`doc${i+1}`] = await fs.readFile(program.input[i], {encoding: 'ascii'});
+    mdFiles[`doc${i+1}`] = await fs.readFile(program.input[i], {encoding: 'utf-8'});
   }
   var merged = template(mdFiles);
-  await fs.writeFile(program.out,merged, {encoding: 'ascii'});
+  await fs.writeFile(program.out,merged, {encoding: 'utf-8'});
 
   console.log('Done');
 
